@@ -33,7 +33,7 @@ const CryptoDashboard = () => {
 
   useEffect(() => {
     const fetchData = () => {
-      axios.get("https://crypto-dashboard-backend-updated.onrender.com")
+      axios.get("https://crypto-dashboard-backend-updated.onrender.com/api/crypto")
         .then(res => setData(res.data))
         .catch(err => console.log(err));
     };
